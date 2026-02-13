@@ -5,130 +5,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/Frame 1.png" type="image/x-icon">
     <title>makeon</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/makeon.css">
 </head>
 <body>
+    <div class="top_bnr">
+        <div class="msg">
+            <p>피부 전문가 아모레퍼시픽이 만든, 라이프 뷰티 디바이스 브랜드 메이크온</p>
+            <p>피부 전문가 아모레퍼시픽이 만든, 라이프 뷰티 디바이스 브랜드 메이크온</p>
+        </div>
+    </div>
     <div id="wrap">
         <header>
-            <h1><a href="./makeon.html"><img src="./img/makeon.jpg" alt="makeon"></a></h1>
+            <h1><a href="./index.html"><img src="./img/makeon.jpg" alt="makeon"></a></h1>
             <nav>
                 <ul id="gnb">
-                    <li><a href="#">브랜드스토리</a></li>
+                    <li><a href="#">브랜드스토리</a>
+                        <ul class="submenu">
+                            <li><a href="#">메이크온 스토리</a></li>
+                            <li><a href="#">제품 스토리</a>
+                                <ul class="3depth">
+                                    <li><a href="#">ONFAOE LED Mask</a></li>
+                                    <li><a href="#">Skin Light Therapy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="#">신제품</a></li>
-                    <li><a href="#">전체제품</a></li>
+                    <li><a href="#">전체제품</a>
+                        <ul class="submenu">
+                            <li><a href="#">뷰티디바이스</a></li>
+                            <li><a href="#">스킨케어</a></li>
+                            <li><a href="#">이너뷰티</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">멤버십</a></li>
-                    <li><a href="#">이벤트</a></li>
-                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">이벤트</a>
+                        <ul class="submenu">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">종료된 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객지원</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">튜토리얼</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <ul class="lnb_user">
-                <li class="search_btn"><a href="#"><img src="./img/search.png" alt="검색하기"></a></li>
-                <li class="like"><a href="#"><img src="./img/shopping cart.png" alt="장바구니"></a></li>
-                <li class="cart"><a href="#"><img src="./img/my page.png" alt="마이페이지"></a></li>
+                <li class="search"><a href="#"><img src="./img/search.png" alt="검색하기"></a></li>
+                <li class="cart"><a href="#"><img src="./img/shopping cart.png" alt="장바구니"></a></li>
+                <li class="my page"><a href="#"><img src="./img/my page.png" alt="마이페이지"></a></li>
             </ul>
         </header>
         <main>
-            <div id="slide_wrap">
-                <div class="slide" style="background-image:url(#);">
+            <div id="hero_bnr_slide_wrap">
+                <div class="slide_1" style="background-image:url(./img/Hero\ Banner1.jpg);">
                     <div class="txt">
                         <h1>3초 진단, 3분 케어, 30개의 임상 결과<br><span>스킨 라이트 테라피 3S</span></h1>
                         <p>더 강력해진 효과로 홈케어의 한계를 뛰어넘다</p>
                         <a class="learn_more" href="#">자세히 보기</a>
                     </div>
                 </div>
-                <div class="prev_btn"><img src="" alt="이전 광고 보기"></div>
-                <div class="next_btn"><img src="" alt="다음 광고 보기"></div>
-                <div class="page_number">
-                    <span class="current">01/</span>
-                    <span class="all">05</span>
+                <div class="slide_2" style="background-image:url(./img/Hero\ Banner.jpg);">
+                    <div class="txt">
+                        <h1>하루 4,500원 프리미엄 케어<br><span>2월 한정 -28만원 타임딜</span></h1>
+                        <p>절대 놓치지 마세요</p>
+                        <a class="learn_more" href="#">자세히 보기</a>
+                    </div>
                 </div>
-                <p>Scroll down<img src="" alt=""></p>
+                <div class="prev_btn"><button><img src="./img/Previous.png" alt="이전 광고 보기"></button></div>
+                <div class="next_btn"><button><img src="./img/next.png" alt="다음 광고 보기"></button></div>
+            <div class="page_number">
+                <span class="current">01/</span>
+                <span class="all">05</span>
+            </div>
+                <p>Scroll down<img src="./img/Arrow.png" alt=""></p>
             </div>
             <section class="best_seller" data-tag="BestSellerShowcase">
                 <h1>내 피부를 빛내줄<br><span>Best Seller</span></h1>
                 <ul class="product_list">
                     <li class="product_item">
-                        <img src="" alt="스킨 라이트 테라피 lll 사용 장면">
+                        <a href="#">
+                            <img src="./img/slide image.jpg" alt="스킨 라이트 테라피 lll 사용 장면">
+                            <h2>스킨 라이트 테라피 lll</h2>
+                            <p>피부에 꼭 필요한 핵심 기능만 쏙쏙<br>기초를 탄탄하게 세워주는 기초 디바이스</p>
+                            <P>Detali view<img src="./img/next.png" alt="상세보기"></P>
+                        </a>
                     </li>
                     <li class="product_item">
-                        <img src="" alt="스킨 라이트 테라피 lll 제품 단독 이미지">
-                    </li>
-                    <li class="product_item_featured">
-                        <img src="" alt="스킨 라이트 테라피 lll 대표 제품 이미지">
+                        <a href="#">
+                            <img src="./img/slide image1.jpg" alt="페이셜 부스팅 스파 제품 단독 이미지">
+                            <h2>페이셜 부스팅 스파</h2>
+                            <p>프리미엄 홈에스테틱의 완성! 피부에 새로운...</p>
+                            <P>Detali view<img src="./img/next.png" alt="상세보기"></P>
+                        </a>
                     </li>
                     <li class="product_item">
-                        <img src="" alt="스킨 라이트 테라피 lll 사용 장면">
+                        <a href="#">
+                            <img src="./img/slide image3.jpg" alt="스라테3S + 마스크 15매 제품 단독 이미지">
+                            <h2>스라테3S + 마스크 15매</h2>
+                            <p>나만의 탄력 집중 루틴을 위한 콜라겐생성</p>
+                            <P>Detali view<img src="./img/next.png" alt="상세보기"></P>
+                        </a>
                     </li>
                     <li class="product_item">
-                        <img src="" alt="스킨 라이트 테라피 lll 제품 단독 이미지">
+                        <a href="#">
+                            <img src="./img/slide image2.jpg" alt="젬 소노 테라피 릴리프 제품 단독 이미지">
+                            <h2>젬 소노 테라피 릴리프</h2>
+                            <p>피부투과도 600%의 완벽한 속건조 케어를...</p>
+                            <P>Detali view<img src="./img/next.png" alt="상세보기"></P>
+                        </a>
+                    </li>
+                    <li class="product_item">
+                        <a href="#">
+                            <img src="./img/product image_1.jpg" alt="스킨 라이트 테라피 lll 제품 단독 이미지">
+                            <h2>스킨 라이트 테라피 lll</h2>
+                            <p>피부에 꼭 필요한 핵심 기능만 쏙쏙<br>기초를 탄탄하게 세워주는 기초 디바이스</p>
+                            <P>Detali view<img src="./img/next.png" alt="상세보기"></P>
+                        </a>
                     </li>
                 </ul>
-                <h2>스킨 라이트 테라피 lll</h2>
-                <p>피부에 꼭 필요한 핵심 기능만 쏙쏙<br>기초를 탄탄하게 세워주는 기초 디바이스</p>
-                <a href="#" class="btn_detail">Detali view<img src="" alt="상세보기"></a>
             </section>
             <section class="new_item" data-tag="newltemshowcase">
-                <div class="hero_content">
-                    <h2>피부를 잘 아는 뷰티 디바이스<br><span>New_ltem</span></h2>
-                    <a href="#" class="btn_detail">Detail view<img src="" alt="상세보기"></a>
+                <div class="hero_content" style="background-image:url(./img/hero-image.jpg);">
+                    <h2>3,770개의 빛으로 만든 피부 리페어팩<br><span>New Item</span></h2>
+                    <a href="#" class="btn_detail">Detail view<img src="./img/next.png" alt="상세보기"></a>
                 </div>
                 <div class="new_item_layout">
-                    <img src="" alt="LED 컬러로 기능이 구분된 스킨 라이트 테라피 3S">
                     <article class="product_card">
                         <a href="#">
-                            <h2>스킨 라이트 테라피 3S</h2>
-                            <p><em>Skin Light Therapy sS</em></p>
-                            <p><img src="" alt="스킨 라이트 테라피"></p>
-                            <p>30개의 인체적용시험<br>결과가 증명하는<br>더 강력해진 효과</p>
-                            <p><em>피부 고민 맞춤 케어</em></p>
+                            <h2>온페이스 LED 마스크</h2>
+                            <p><em>ONFACE LED MASK</em></p>
+                            <p><img src="./img/hero-image1.png" alt="온페이스 LED 마스크 이미지"></p>
+                            <p>3,770개의<br>빛으로 만든<br>압도적인 탄력 회복력</p>
+                            <p><em>피부 리페어팩</em></p>
                         </a>
+                    </article>
+                </div>
+                <div class="new_item_layout">
+                    <article class="product_card">
+                        <p>비.교.불.가<br>탄력 핵심 엘라스틴<br>1795% 증가</p>
+                        <h2>온리페이스 LED 마스크는<br>어떤 디바이스인가요?</h2>
+                        <p><img src="./img/hero-image2.png" alt="온페이스 LED 마스크 이미지"></p>
+                        <a href="#" class="view_details">View Mare<img src="./img/next.png" alt="상세보기"></a>
                     </article>
                 </div>
             </section>
             <section class="special_event">
                 <p>지금 주목해야 할</p>
                 <h1>Special Event</h1>
-                <a href="#">이벤트 전체보기<img src="" alt=""></a>
+                <a href="#">이벤트 전체보기<img src="./img/Arrow1.png" alt=""></a>
                 <ul class="event_list">
                     <li class="event_card">
                         <a href="#">
-                            <img src="" alt="Best Review 이벤트">
-                            <h2>텍스트 수급 필요</h2>
-                            <h2>텍스트 수급 필요</h2>
+                            <img src="./img/Event.jpg" alt="Membership 이벤트">
+                            <h2>메이크온 멤버십 안내</h2>
+                            <p>디바이스 첫 구매 후 혜택 받아보세요</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="event_card">
                         <a href="#">
-                            <article class="event_card">
-                            <img src="" alt="Membership 이벤트">
-                            <p>텍스트 수급 필요</p>
-                            <p>텍스트 수급 필요</p>
+                            <img src="./img/Event1.jpg" alt="Best Reuiew 이벤트">
+                            <h2>메이크온몰 리뷰 작성 리워드 안내/h2>
+                            <p>메이크온몰 적립금 최대 3,000P 지급</p>
                         </a>
-                        </article>
                     </li>
                 </ul>
             </section>
             <section class="review">
                 <h2>고민이 될 땐 솔직한 리뷰<br><span>Review</span></h2>
+                <a href="#">리뷰 전체보기<img src="./img/Arrow1.png" alt=""></a>
                 <ul class="review_list">
+                    <li><button><img src="./img/Arrow2.png" alt="이전"></button>1/2<button><img src="./img/Arrow1.png" alt="다음"></button></li>
                     <li>
                         <a href="#">
                             <article class="review_card">
-                                <img src="" alt="">
-                                <p class="review_text">3초만에 나의 피부컨디션을 측정해<br>주고, 피부맞춤 케어솔루션을 제...</p>
+                                <img src="./img/Review.jpg" alt="">
                                 <div class="review">
-                                    <p class="review_user"><img src="" alt="">@hi_shuushu</p>
-                                    <p class="review_product"><img src="" alt="">스킨 라이트 테라피 lll&star;5.0</p>
+                                    <a href="#">
+                                        <p class="review_product"><img src="./img/Review_2.jpg" alt="">온페이스 LED 마스크<br>&star;4.9 리뷰73</p>
+                                    </a>
                                 </div>
+                                <p class="review_text">뷰티디바이스를 하나 장만하고 싶어서 고민하던 중에,<br>LED마스크가 꾸준히 사용하기 가장 편하고 물리적...<br>&star;&star;&star;&star;&star;<br>김리****</p>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <article class="review_card">
+                                <img src="./img/Review1.jpg" alt="">
+                                <div class="review">
+                                    <a href="#">
+                                        <p class="review_product"><img src="./img/Review_2.jpg" alt="">온페이스 LED 마스크<br>&star;4.9 리뷰73</p>
+                                    </a>
+                                </div>
+                                <p class="review_text">가격이 만만치 않아서 딱 1주일 고민했는데, 제가 원래<br>홈케어 디바이스를 꾸준히 사용하는 편이라 "이건 투...<br>&star;&star;&star;&star;&star;<br>정혜****</p>
                             </article>
                         </a>
                     </li>
                 </ul>
             </section>
+            <section class="hero" style="background-image: url(./img/Background.jpg);">
+                <div class="card">
+                    <p>메이크온몰에서만 드리는</p>
+                    <h2>Special Service</h2>
+                    <ul class="benefit_list">
+                        <li><a href="#"><img src="./img/img-sm.png" alt="">디바이스 첫 구매 시, 사은품 최다 증정</a></li>
+                        <li><a href="#"><img src="./img/img-sm1.png" alt="">신규회원 웰컴 바우처 증정</a></li>
+                        <li><a href="#"><img src="./img/img-sm2.png" alt="">리뷰 작성하면 적립금 추가 지급</a></li>
+                        <li><a href="#"><img src="./img/img-sm3.png" alt="">제품 사용 가이드 모아보기</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="brand" style="background-image: url(./img/Background1.jpg);">
+                <h1>makeON</h1>
+                <p>당신의 피부를 켜지게 하는 3분<br>당신의 피부와 연결되는 24/7</p>
+                <a href="#" class="btn_detail">Detail view<img src="./img/next.png" alt="상세보기"></a>
+            </section>
         </main>
+        <footer>
+            <div class="footer_left">
+                <address>
+                    <p><em>(주)아모레퍼시픽</em> | 대표이사 김승환 | 주소 서울특별시 용산구 한강대로 100(한강로2가)</p>
+                    <p>사업자 등록번호 106-86-43373 | 통신판매업 신고번호 2017-서울용산-1308<a href="#">[사업자정보확인]</a></p>
+                    <p>호스팅제공자 (주)카페24</p>
+                </address>
+                <div class="footer_logo">
+                    <a href="./index.html"><img src="./img/makeon.jpg" alt="makeon"></a>
+                </div>
+                <nav class="footer_policy">
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </nav>
+                <nav class="fnb">
+                    <ul class="fnb_list">
+                        <li><a href="#">브랜드스토리</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">멤버십</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">고객지원</a></li>
+                    </ul>
+                </nav>
+                <section class="footer_cta">
+                    <p>makeON 앱과<br>뷰티 디바이스를<br>연결해보세요!</p>
+                    <img src="./img/qr.jpg" alt="makeON 앱 연결 QR코드">
+                </section>
+                <dl class="customer_center">
+                    <dt>고객센터</dt>
+                    <dd><strong>080-804-1010</strong>쇼핑문의</dd>
+                    <dt><strong>080-023-5454</strong>제품문의</dt>
+                    <dd>평일 9:00 ~ 18:00 (주말, 공휴일 휴무)</dd>
+                </dl>
+                <p>비즈니스 문의 makeonmall@amorepacific.com</p>
+                <div class="footer_bottom">
+                    <p class="copyright">
+                        copyright &copy; makeON. All Rights Reserved.
+                    </p>
+                    <nav class="sns">
+                        <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Kakao</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

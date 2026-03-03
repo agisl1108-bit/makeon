@@ -1,1 +1,79 @@
 body {}
+body .top_bnr {
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    padding: 10px 0;
+}
+body .top_bnr .msg {
+    display: flex; flex-flow:row nowrap;
+    width: max-content;
+    gap:150px;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
+    padding-left: 100%;
+}
+body .top_bnr .msg p {
+    color:#fff;
+    font-size:0.88rem; font-weight:600;
+}
+@keyframes marquee{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+/* ============================================top banner (흘러가는 문구 느낌) */
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav #gnb {}
+#wrap header nav #gnb > li {}
+#wrap header nav #gnb > li > a {}
+#wrap header nav #gnb .submenu {}
+#wrap header nav #gnb .submenu li {}
+#wrap header nav #gnb .submenu li a {}
+#wrap header nav #gnb .depth {}
+#wrap header nav #gnb .depth li {}
+#wrap header nav #gnb .depth li a {}
+/* ==========================================================헤더 아이콘 메뉴 */
+#wrap header .lnb_user {}
+#wrap header .lnb_user .search {}
+#wrap header .lnb_user .search a {}
+#wrap header .lnb_user .search a img {}
+#wrap header .lnb_user .cart {}
+#wrap header .lnb_user .cart a {}
+#wrap header .lnb_user .cart a img {}
+#wrap header .lnb_user .my_page {}
+#wrap header .lnb_user .my_page a {}
+#wrap header .lnb_user .my_page a img {}
+/* =========================================================footer */
+#wrap footer {}
+#wrap footer .footer_left {}
+#wrap footer .footer_left address {}
+#wrap footer .footer_left address p {}
+#wrap footer .footer_left address p em {}
+#wrap footer .footer_left address p a {}
+#wrap footer .footer_logo {}
+#wrap footer .footer_logo img {}
+#wrap footer .footer_policy {}
+#wrap footer .footer_policy li {}
+#wrap footer .footer_policy li a {}
+#wrap footer .fnb_list {}
+#wrap footer .fnb_list li {}
+#wrap footer .fnb_list li a {}
+#wrap footer .footer_cta {}
+#wrap footer .footer_cta p {}
+#wrap footer .footer_cta p br {}
+#wrap footer .footer_cta img {}
+#wrap footer .customer_center {}
+#wrap footer .customer_center dt {}
+#wrap footer .customer_center dd {}
+#wrap footer .customer_center dd strong {}
+#wrap footer p {}
+#wrap footer .footer_bottom {}
+#wrap footer .footer_bottom .copyright {}
+#wrap footer .footer_bottom .sns {}
+#wrap footer .footer_bottom .sns li {}
+#wrap footer .footer_bottom .sns li a {}
